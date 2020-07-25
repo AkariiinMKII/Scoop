@@ -110,7 +110,7 @@ There could be a JSONPath query in `checkver.jsonpath`, and so does RegEx ([samp
 
 ## Using RegEx with JSONPath in `checkver`
 
-If `checkver.regex` and `checkver.jsonpath` are all assigned, **scoop** use `checkver.jsonpath` to extract a string which `checkver.regex` is matched to to find the version. Example: [nwjs](https://github.com/ScoopInstaller/Main-extras/blob/master/bucket/nwjs.json)
+If `checkver.regex` and `checkver.jsonpath` are all assigned, **scoop** use `checkver.jsonpath` to extract a string which `checkver.regex` is matched to to find the version. Example: [nwjs](https://github.com/lukesampson/scoop-extras/blob/master/bucket/nwjs.json)
 
 ```json
 "checkver": {
