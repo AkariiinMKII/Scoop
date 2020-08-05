@@ -81,3 +81,21 @@ If your proxy password contains `@` or `:` characters, you need to escape them u
 ```powershell
 scoop config proxy 'username:p\@ssword@proxy.example.org:8080'
 ```
+
+##### proxy for "bucket add" command
+This is a potential bug but I found a workaround:
+
+If you try to run
+```scoop config proxy currentuser@proxy.example.org:8080``` and then ```scoop bucket add extras``` it won't work because scoop passes these credentials directly to git and git has a different proxy format.
+So for "bucket add" to work you will have to change the proxy string to the format git understand so ```currentuser@proxy.example.org:8080``` becomes ```:@proxy.example.org:8080```
+
+so this will work:
+```powershell
+scoop config proxy ':@proxy.example.org:8080'
+scoop bucket add extras
+```
+but then you will have to change the proxy string back to normal to install actual packages: 
+```powershell
+scoop config proxy 'currentuser@proxy.example.org:8080'
+scoop install vscode
+```
