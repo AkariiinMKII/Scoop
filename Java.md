@@ -73,8 +73,7 @@ scoop install adoptopenjdk-openj9-jre
 
 ### ojdkbuild
 
-- [ojdkbuild](https://github.com/ojdkbuild/ojdkbuild)
-
+[ojdkbuild](https://github.com/ojdkbuild/ojdkbuild) manifests requires [lessmsi](https://github.com/ScoopInstaller/Main/blob/master/bucket/lessmsi.json) to be installed and configured by running `scoop config MSIEXTRACT_USE_LESSMSI true`.
 
 ### Amazon Corretto
 
