@@ -92,7 +92,7 @@ There are two solutions available today for switching java:
 1. `scoop reset <java>[@<version>]`
 2. Using [find-java](https://github.com/lukesampson/scoop-extras/blob/master/bucket/find-java.json) from [extras](https://github.com/lukesampson/scoop-extras)
 
-`scoop reset` works very well for the current session, and will also update the user's path.
+`scoop reset` works very well for the current session, and will also update the user's path. Please note https://github.com/lukesampson/scoop/issues/3822 - currently this isn't working for all available packages.
 
 Globally installed javas takes precedence over user-installed javas, so running `sudo scoop install -g oraclejdk-lts` will install a java that is always default for new sessions.
 
