@@ -44,6 +44,7 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
     * `args`: An array of arguments to pass to the installer. Optional.
     * `keep`: `"true"` if the installer should be kept after running (for future uninstallation, as an example). If omitted or set to any other value, the installer will be deleted after running. See [`extras/oraclejdk`](https://github.com/lukesampson/scoop-extras/blob/master/oraclejdk.json) for an example. This option will be ignored when used in an `uninstaller` directive.
     * Variables available to `script` and `args`: `$fname` (the file last downloaded), `$manifest` (the deserialized manifest reference), `$architecture` (`64bit` or `32bit`), `$dir` (install directory)
+    * Called during both `scoop install` and `scoop upgrade`.
 * <a name="license"/>`license`: A string or hash of the software license for the program. For well-known licenses, please use the identifier found at https://spdx.org/licenses/ For other licenses, use the URL of the license, if available. Otherwise, use “Freeware”, “Proprietary”, “Public Domain”, “Shareware”, or “Unknown”, as appropriate. If different files have different licenses, separate licenses with a comma (,). If the entire application is [dual licensed](https://en.wikipedia.org/wiki/Multi-licensing), separate licenses with a pipe symbol (|).
   * `identifier`: The SPDX identifier, or “Freeware”, “Proprietary”, “Public Domain”, “Shareware”, or “Unknown”, as appropriate.
   * `url`: For non-SPDX licenses, include a link to the license. It is acceptable to include links to SPDX licenses, as well.
@@ -64,6 +65,7 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
     * `["Feature Name"] = [ "app1", "app2"... ]`<br>e.g. `"JDK": [ "extras/oraclejdk", "openjdk" ]`<br>
 If any of the apps suggested for the feature are already installed, the feature will be treated as 'fulfilled' and the user won't see any suggestions.
 * <a name="uninstaller"/>`uninstaller`: Same options as `installer`, but the file/script is run to uninstall the application.
+    * Called during both `scoop install` and `scoop upgrade`.
 * <a name="url"/>`url`: The URL or URLs of files to download. If there's more than one URL, you can use a JSON * array, e.g. `"url": [ "http://example.org/program.zip", "http://example.org/dependencies.zip" ]`. URLs can be HTTP, HTTPS or FTP.
   * To change the filename of the downloaded URL, you can append a URL fragment (starting with `#`) to URLs. For example,
   * `"http://example.org/program.exe"` -> `"http://example.org/program.exe#/dl.7z"`
