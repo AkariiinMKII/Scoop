@@ -65,7 +65,7 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
     * `["Feature Name"] = [ "app1", "app2"... ]`<br>e.g. `"JDK": [ "extras/oraclejdk", "openjdk" ]`<br>
 If any of the apps suggested for the feature are already installed, the feature will be treated as 'fulfilled' and the user won't see any suggestions.
 * <a name="uninstaller"/>`uninstaller`: Same options as `installer`, but the file/script is run to uninstall the application.
-    * Called during both `scoop install` and `scoop upgrade`.
+    * Called during both `scoop uninstall` and `scoop upgrade`.
 * <a name="url"/>`url`: The URL or URLs of files to download. If there's more than one URL, you can use a JSON * array, e.g. `"url": [ "http://example.org/program.zip", "http://example.org/dependencies.zip" ]`. URLs can be HTTP, HTTPS or FTP.
   * To change the filename of the downloaded URL, you can append a URL fragment (starting with `#`) to URLs. For example,
   * `"http://example.org/program.exe"` -> `"http://example.org/program.exe#/dl.7z"`
