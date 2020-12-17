@@ -27,21 +27,21 @@
 
 ## Guides
 
-* [Theming Powershell](wiki/Theming-Powershell)
-* [SSH](wiki/SSH-on-Windows)
-* [GitHub with SSH Key](wiki/GitHub-with-SSH-Key)
-* [Customize PHP configuration](wiki/Custom-PHP-configuration)
 * [Apache with PHP](wiki/Apache-with-PHP)
-* [Java](wiki/Java)
+* [Customize PHP configuration](wiki/Custom-PHP-configuration)
 * [Docker](wiki/Docker)
+* [GitHub with SSH Key](wiki/GitHub-with-SSH-Key)
+* [Java](wiki/Java)
+* [SSH](wiki/SSH-on-Windows)
+* [Theming Powershell](wiki/Theming-Powershell)
 
 ## Misc
 
-* [System-wide (global) installs](wiki/Global-Installs)
-* [Switching between Ruby and Python Versions](wiki/Switching-Ruby-And-Python-Versions)
-* [Why PowerShell?](wiki/Why-PowerShell)
-* [Example Setup Scripts](wiki/Example-Setup-Scripts)
-* [Using Scoop behind a proxy server](wiki/Using-Scoop-behind-a-proxy)
-* [Can I use Scoop in Bash, Zsh, etc?](wiki/Can-I-Use-Scoop-in-Bash,-Zsh,-etc%3F)
-* [PowerShell modules](wiki/PowerShell-Modules)
 * [Antivirus false positive](Antivirus-false-positive)
+* [Can I use Scoop in Bash, Zsh, etc?](wiki/Can-I-Use-Scoop-in-Bash,-Zsh,-etc%3F)
+* [Example Setup Scripts](wiki/Example-Setup-Scripts)
+* [PowerShell modules](wiki/PowerShell-Modules)
+* [Switching between Ruby and Python Versions](wiki/Switching-Ruby-And-Python-Versions)
+* [System-wide (global) installs](wiki/Global-Installs)
+* [Using Scoop behind a proxy server](wiki/Using-Scoop-behind-a-proxy)
+* [Why PowerShell?](wiki/Why-PowerShell)
