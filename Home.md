@@ -40,6 +40,7 @@
 * [Antivirus false positive](Antivirus-false-positive)
 * [Can I use Scoop in Bash, Zsh, etc?](wiki/Can-I-Use-Scoop-in-Bash,-Zsh,-etc%3F)
 * [Example Setup Scripts](wiki/Example-Setup-Scripts)
+* [Open With and Icons](wiki/Open-With-Icons)
 * [PowerShell modules](wiki/PowerShell-Modules)
 * [Switching between Ruby and Python Versions](wiki/Switching-Ruby-And-Python-Versions)
 * [System-wide (global) installs](wiki/Global-Installs)
