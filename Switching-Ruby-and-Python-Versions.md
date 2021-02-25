@@ -51,7 +51,7 @@ php --version # -> PHP 8.0.2
 scoop reset php74
 php --version # -> PHP 7.4.15
 
-# switch back (to 8.x)
+# switch back to latest version
 scoop reset php
 php --version # -> PHP 8.0.2
 ```
