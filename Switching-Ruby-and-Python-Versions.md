@@ -38,3 +38,20 @@ python --version # -> Python 2.7.13
 scoop reset python
 python --version # -> Python 3.6.2
 ```
+
+## PHP
+
+```powershell
+scoop bucket add versions # add the 'versions' bucket if you haven't already
+
+scoop install php74 php
+php --version # -> PHP 8.0.2
+
+# switch to PHP 7.4.x
+scoop reset php74
+php --version # -> PHP 7.4.15
+
+# switch back (to 3.x)
+scoop reset php
+php --version # -> PHP 8.0.2
+```
