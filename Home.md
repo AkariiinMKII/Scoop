@@ -42,7 +42,7 @@
 * [Example Setup Scripts](wiki/Example-Setup-Scripts)
 * [Open With and Icons](wiki/Open-With-Icons)
 * [PowerShell modules](wiki/PowerShell-Modules)
-* [Switching between Ruby and Python Versions](wiki/Switching-Ruby-And-Python-Versions)
+* [Switching between Ruby and Python Versions](wiki/Switching-Ruby,-Python-and-PHP-Versions)
 * [System-wide (global) installs](wiki/Global-Installs)
 * [Using Scoop behind a proxy server](wiki/Using-Scoop-behind-a-proxy)
 * [Why PowerShell?](wiki/Why-PowerShell)
