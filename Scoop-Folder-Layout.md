@@ -10,6 +10,8 @@ For general understanding and troubleshooting it can be helpful to know what fol
 `...\scoop\persist` - ...?  
 `...\scoop\shims` - added to PATH, wrappers that point to the installed applications  
 
+`%USERPROFILE%\.config\scoop` - _(?) seems to be where network path to primary Scoop repository is defined_
+
 
 
 
