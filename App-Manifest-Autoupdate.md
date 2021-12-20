@@ -587,13 +587,6 @@ All the properties can be set globally for all architectures or for each archite
 - `$checksum`: `([a-fA-F0-9]{32,128})` MD5, SHA-1, SHA-256 or SHA-512 hash type
 - `$base64`: `([a-zA-Z0-9+\/=]{24,88})` BASE64 encoded checksum (can be MD5, SHA-1, SHA-256 or SHA-512)
 
-# Limitations
-
-There are some complex manifests which reach the limits of the current autoupdate implementation, mainly because `autoupdate` only update `url`, `hash` and `extract_dir`. (*The list of affected manifests is incomplete*)
-
-- The binaries specified in the `bin` or `shortcuts` change with the version number. Example: [gimp](https://github.com/lukesampson/scoop-extras/blob/master/bucket/gimp.json)
-- There are multiple `url`s needed to be updated. Example: [coreutils](https://github.com/ScoopInstaller/Main/blob/master/bucket/coreutils.json)
-
 # Testing and running autoupdate
 
 If you want to confirm an autoupdate works, e.g. after adding it to an existing manifest or creating a new one, change the `version` field to a lower or different version and then run `checkver.ps1` or use the `-f` parameter.
