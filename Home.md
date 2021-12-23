@@ -23,6 +23,7 @@
   * [Persistent data](wiki/Persistent-data)
   * [Pre- and post-install Scripts](Pre--and-Post-install-scripts)
 * [Dependencies](wiki/Dependencies)
+* [Making a contribution](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
 * [The 'Current' Version Alias](wiki/The-'Current'-Version-Alias)
 
 ## Guides
