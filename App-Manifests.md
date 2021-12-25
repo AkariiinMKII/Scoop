@@ -16,7 +16,12 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
 
 ### Required Properties
 
-* `version`: The version of the app that this manifest installs, per the [JSON schema definition](https://github.com/lukesampson/scoop/blob/master/schema.json#L527-L530).
+* `version`: The version of the app that this manifest installs.
+* <a name="url"/>`url`: The URL or URLs of files to download. If there's more than one URL, you can use a JSON * array, e.g. `"url": [ "http://example.org/program.zip", "http://example.org/dependencies.zip" ]`. URLs can be HTTP, HTTPS or FTP.
+  * To change the filename of the downloaded URL, you can append a URL fragment (starting with `#`) to URLs. For example,
+  * `"http://example.org/program.exe"` -> `"http://example.org/program.exe#/dl.7z"`
+  * Note the fragment must start with `#/` for this to work.
+  * In the above example, Scoop will download `program.exe` but save it as `dl.7z`, which will then be extracted automatically with 7-Zip. This technique is commonly used in Scoop manifests to bypass executable installers which might have undesirable side-effects like registry changes, files placed outside the install directory, or an admin elevation prompt.
 
 ### Optional Properties
 
@@ -66,11 +71,6 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
 If any of the apps suggested for the feature are already installed, the feature will be treated as 'fulfilled' and the user won't see any suggestions.
 * <a name="uninstaller"/>`uninstaller`: Same options as `installer`, but the file/script is run to uninstall the application.
     * Called during both `scoop uninstall` and `scoop upgrade`.
-* <a name="url"/>`url`: The URL or URLs of files to download. If there's more than one URL, you can use a JSON * array, e.g. `"url": [ "http://example.org/program.zip", "http://example.org/dependencies.zip" ]`. URLs can be HTTP, HTTPS or FTP.
-  * To change the filename of the downloaded URL, you can append a URL fragment (starting with `#`) to URLs. For example,
-  * `"http://example.org/program.exe"` -> `"http://example.org/program.exe#/dl.7z"`
-  * Note the fragment must start with `#/` for this to work.
-  * In the above example, Scoop will download `program.exe` but save it as `dl.7z`, which will then be extracted automatically with 7-Zip. This technique is commonly used in Scoop manifests to bypass executable installers which might have undesirable side-effects like registry changes, files placed outside the install directory, or an admin elevation prompt.
 
 ### Undocumented Properties
 
