@@ -1,1 +1,0 @@
-Please more explanation how to use scoop in  a batch file. Now after 1 scoop command scoop ends the batch file. The previous item was very vague. 
