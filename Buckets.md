@@ -46,10 +46,7 @@ You can use the [BucketTemplate](https://github.com/ScoopInstaller/BucketTemplat
 
 #### Manually
 
-Here's how you might go about manually creating a new bucket, using GitHub to host it. You don't have to use GitHub though—you can use whatever source control repo you like, or even just a Git repo on your local or network drive.
-
-1. Create a new GitHub repo called e.g. `my-bucket`
-2. Add an app to your bucket. In a powershell session:
+Here's how you might go about manually creating a new bucket, using GitHub to host it. You don't have to use GitHub though—you can use whatever source control repo you like, or even just a Git repo on your local or network drive. Create a new GitHub repo called e.g. `my-bucket`. Add an app to your bucket, like this:
 
 ```powershell
 git clone https://github.com/<your-username>/my-bucket
@@ -59,12 +56,15 @@ git add .
 git commit -m "add hello app"
 git push
 ```
-3. Configure Scoop to use your new bucket:
+
+#### After the bucket is created
+
+1. Configure Scoop to use your new bucket:
 
 ```powershell
 scoop bucket add my-bucket https://github.com/<your-username>/my-bucket
 ```
-4. Check that it works:
+2. Check that it works:
 
 ```powershell
 scoop bucket list # -> you should see 'my-bucket'
@@ -72,4 +72,4 @@ scoop search hello # -> you should see hello listed under, 'my-bucket bucket:'
 scoop install hello
 hello # -> you should see 'Hello, <windows-username>!'
 ```
-5. To share your bucket, all you need to do is tell people how to add your bucket, i.e. by running the command in step 3. If you want your bucket listed in the [Scoop Directory](https://github.com/rasa/scoop-directory) , add a topic of `scoop-bucket` to its github page.
+3. To share your bucket, all you need to do is tell people how to add your bucket, i.e. by running the command in step 3. If you want your bucket listed in the [Scoop Directory](https://github.com/rasa/scoop-directory) , add a topic of `scoop-bucket` to its github page.
