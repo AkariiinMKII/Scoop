@@ -36,7 +36,17 @@ You can run `scoop help bucket` for more information on buckets.
 
 ### Creating your own bucket
 
-Here's an example of one way you might go about creating a new bucket, using GitHub to host it. You don't have to use GitHub though—you can use whatever source control repo you like, or even just a Git repo on your local or network drive.
+#### Using template
+
+You can use the [BucketTemplate](https://github.com/ScoopInstaller/BucketTemplate) repository to create the boilerplate for a bucket. Just click on `Use this template` button. Choose a name for your bucket, follow the instructions at the bottom of the Readme, and you're good to go. The template has a bunch of GitHub Actions and AppVeyor scripts, which gives several advantages:
+- **Continuous integration**: Each new commit will have Scoop's tests run against it, to keep files well-formatted and readable.
+- **Continuous delivery**: An automated workflow runs every 4 hours, which updates all the manifests in the bucket to their latest versions.
+- **Issue handlers**: Common issues like 404 errors and hash-check failures are handled and corrected automatically.
+- **Pull Request handlers**: Pull requests are validated by running checks for required properties, hash verification, CI tests etc.
+
+#### Manually
+
+Here's how you might go about manually creating a new bucket, using GitHub to host it. You don't have to use GitHub though—you can use whatever source control repo you like, or even just a Git repo on your local or network drive.
 
 1. Create a new GitHub repo called e.g. `my-bucket`
 2. Add an app to your bucket. In a powershell session:
