@@ -312,17 +312,11 @@ Some examples using the `autoupdate` feature with [captured variables](#captured
 
 ## Properties of `autoupdate`
 
+Most of the [manifest properties](https://github.com/ScoopInstaller/Scoop/wiki/App-Manifests) could be added into `autoupdate`: `bin`, `extract_dir`, `extract_to`, `env_add_path`, `env_set`, `installer`, `license`, `note`, `persist`, `post_install`, `psmodule`, `shortcuts`, and the most important ones, `url` and `hash`.
+
 All the properties except `autoupdate.note` can be set globally for all architectures or for each architecture separately (under `architecture.64bit` or `architecture.32bit`). Global properties can be used to update each architectural properties, i.e., if only setted globally, `autoupdate.url` is used to update either `architecture.64bit.url` or `architecture.32bit.url`.
 
-- `url`: "uri". An URL template for generating the new url
-  - **scoop** will rename files by appending `#/dl.7z` or `#/pngcrush.exe` to the URL (useful for extracting installers or renaming executables version string)
-  - Supports [captured variables](#captured-variables)
-  - Supports [version variables](#version-variables)
-- `hash`: "object". Set this [property](#adding-hash-to-autoupdate) for obtaining hash values without download the actual files
-- `extract_dir`: "string". Option to update `extract_dir`
-  - Supports [captured variables](#captured-variables)
-  - Supports [version variables](#version-variables)
-- `note`: "string". Optional message to be displayed when the autoupdate command is run
+All the properties except `hash` support [captured variables](#captured-variables) and [version variables](#version-variables), and `hash` has its own [property](#adding-hash-to-autoupdate) for obtaining hash values without download the actual files.
 
 # Adding `hash` to `autoupdate`
 
@@ -599,10 +593,10 @@ scoop config debug $true
 
 Check if the `url`, `hash` and `extract_dir` properties have the correct values. Try to install/uninstall the app and submit your changes.
 
-Manifests in some known buckets are autoupdated by [ScoopInstaller/Excavator](https://github.com/ScoopInstaller/Excavator), so if you want some apps being autoupdated, migrate them to one of these buckets or run an instance of the excavator yourself.
+Manifests in some known buckets are autoupdated by [ScoopInstaller/GithubActions](https://github.com/ScoopInstaller/GithubActions), so if you want some apps being autoupdated, migrate them to one of these buckets or run an instance of the excavator yourself.
 
 - [`main`](https://github.com/ScoopInstaller/Main): Update per hour
-- [`extras`](https://github.com/lukesampson/scoop-extras): Update per hour
+- [`extras`](https://github.com/ScoopInstaller/Extras): Update per hour
 - [`versions`](https://github.com/ScoopInstaller/Versions): Update per day
 - [`java`](https://github.com/ScoopInstaller/Java): Update per day
 - [`php`](https://github.com/ScoopInstaller/PHP): Update per day
