@@ -143,7 +143,7 @@ Use `checkver.reverse: true` to let `checkver.regex` match the last occurrence f
 ```json
 "checkver": {
     "url": "https://download.videolan.org/pub/videolan/x264/binaries/win64/",
-    "re": "x264-r(?<version>[\\d]+)-(?<commit>[a-fA-F0-9]{7}).exe",
+    "regex": "x264-r(?<version>[\\d]+)-(?<commit>[a-fA-F0-9]{7}).exe",
     "reverse": true
 }
 ```
@@ -155,7 +155,7 @@ This example will provide `$matchVersion` and `$matchShort` as variables (used i
 ```json
 "checkver": {
     "url": "https://github.com/git-for-windows/git/releases/latest",
-    "re": "v(?<version>[\\d\\w.]+)/PortableGit-(?<short>[\\d.]+).*\\.exe"
+    "regex": "v(?<version>[\\d\\w.]+)/PortableGit-(?<short>[\\d.]+).*\\.exe"
 }
 ```
 
@@ -164,7 +164,7 @@ This example will provide `${1}, ${2}, ${3}` (used in `checkver.replace`) and `$
 ```json
 "checkver": {
     "url": "https://github.com/lukesampson/pshazz/commits/master.atom",
-    "re": "(\\d+)-(\\d+)-(\\d+)[\\S\\s]*?(?<sha>[0-9a-f]{40})",
+    "regex": "(\\d+)-(\\d+)-(\\d+)[\\S\\s]*?(?<sha>[0-9a-f]{40})",
     "replace": "0.${1}.${2}.${3}"
 }
 ```
@@ -277,7 +277,7 @@ Some examples using the `autoupdate` feature with [captured variables](#captured
 
 ```json
 "checkver": {
-    "re": "/(?<type>early_access|GA)/(?<path>jdk(?<major>[\\d.]+)(?:.*)?/(?<build>[\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>[\\d.]+)(?<ea>-ea)?(?:\\+[\\d]+)?_windows-x64_bin.(zip|tar.gz))",
+    "regex": "/(?<type>early_access|GA)/(?<path>jdk(?<major>[\\d.]+)(?:.*)?/(?<build>[\\d]+)(?:/GPL|/binaries)?)/(?<file>openjdk-(?<version>[\\d.]+)(?<ea>-ea)?(?:\\+[\\d]+)?_windows-x64_bin.(zip|tar.gz))",
     "replace": "${version}-${build}${ea}"
 },
 "autoupdate": {
@@ -338,7 +338,7 @@ Hash value can be directly extracted by the following method (`autoupdate.hash.m
 
 ```json
 "checkver": {
-    "re": "<strong>(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})</strong>: New QEMU installers \\((?<version>[\\d.a-z\\-]+)\\)"
+    "regex": "<strong>(?<year>\\d{4})-(?<month>\\d{2})-(?<day>\\d{2})</strong>: New QEMU installers \\((?<version>[\\d.a-z\\-]+)\\)"
 },
 "autoupdate": {
     "architecture": {
