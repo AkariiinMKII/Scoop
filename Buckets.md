@@ -38,7 +38,7 @@ You can run `scoop help bucket` for more information on buckets.
 
 #### Using template
 
-You can use the [BucketTemplate](https://github.com/ScoopInstaller/BucketTemplate) repository to create the boilerplate for a bucket. Just click on `Use this template` button. Choose a name for your bucket, follow the instructions at the bottom of the Readme, and you're good to go. The template has a bunch of GitHub Actions and AppVeyor scripts, which gives several advantages:
+You can use the [BucketTemplate](https://github.com/ScoopInstaller/BucketTemplate) repository to create the boilerplate for a bucket. Just click on `Use this template` button. Choose a name for your bucket, follow the instructions at the bottom of the Readme, and you're good to go. The template has a bunch of GitHub Actions workflows, which gives several advantages:
 - **Continuous integration**: Each new commit will have Scoop's tests run against it, to keep files well-formatted and readable.
 - **Continuous delivery**: An automated workflow runs every 4 hours, which updates all the manifests in the bucket to their latest versions.
 - **Issue handlers**: Common issues like 404 errors and hash-check failures are handled and corrected automatically.
