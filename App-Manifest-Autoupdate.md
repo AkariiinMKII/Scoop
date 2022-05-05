@@ -93,7 +93,7 @@ Use a JSON endpoint with [JSONPath expressions](https://goessner.net/articles/Js
 ```json
 "checkver": {
     "url": "https://mran.microsoft.com/assets/configurations/app.config.json",
-    "jp": "$.latestMicrosoftRVersion"
+    "jsonpath": "$.latestMicrosoftRVersion"
 }
 ```
 
