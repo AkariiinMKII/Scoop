@@ -8,3 +8,7 @@
 * **Simpler app repository.** Scoop just uses Git for its app repository. You can create your own repo, or even just a single file that describes an app to install.
 
 **NOTE** While it would be easy to install Skype with Scoop, this will probably never be in Scoop's main bucket (app repository). Scoop focuses on open-source, command-line developer tools. The [scoop-extras](https://github.com/lukesampson/scoop-extras) bucket is for non developer tools.
+
+#### How is Scoop different to [Winget](https://github.com/microsoft/winget-cli)?
+
+Refer to this discussion: https://github.com/ScoopInstaller/Scoop/discussions/4777
