@@ -17,7 +17,7 @@ If you identify with lots of the following statements, then Scoop has been desig
 * Lets you sharpen skills that transfer to Linux and macOS
 
 ### But I already use X, why should I use Scoop?
-There are similar tools available, like [Chocolatey](http://chocolatey.org), [Ninite](http://ninite.com) and [CoApp](http://coapp.org). While there's a more in-depth comparison with Chocolatey [here](Chocolatey-Comparison), here are some general reasons why you might like to try Scoop.
+There are similar tools available, like [Chocolatey](http://chocolatey.org), [Ninite](http://ninite.com) and [CoApp](http://coapp.org). While there's a more in-depth comparison with Chocolatey and Winget [here](Chocolatey-and-Winget-Comparison), here are some general reasons why you might like to try Scoop.
 
 Scoop:
 * avoids GUIs whenever possible, keeps you on the command line
