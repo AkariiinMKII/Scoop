@@ -1,12 +1,13 @@
 ## Variables
 
-These variables are available for use in `pre_install` / `post_install` scripts:
+These variables are available for use in `pre_install` / `post_install` / `pre_uninstall` / `post_uninstall` scripts:
 
 | Variable        | Example                                      | Description      |
 |-----------------|----------------------------------------------|------------------|
 | **Non-path:**  | |
 | `$app`          | `exampleapp`                                 | Name of application (name of manifest file) 
 | `$architecture` | `64bit` or `32bit`                           | The CPU architecture of the app being installed
+| `$cmd`          | `uninstall`, `update`, `install`             | The subcommand that's currently being run
 | `$cfg`          | `{SCOOP_BRANCH, SCOOP_REPO, lastupdate, etc}`| Scoop configuration (powershell object)
 | `$global`       | `$false` or `$true`                          | `$true` for global installs/uninstalls         
 | `$manifest`     | `@{homepage=https://example.com/; description=Example app; version=2.4.1; url=http://example.com/app-setup.exe;...` | Deserialized manifest (powershell object) 
@@ -24,7 +25,7 @@ These variables are available for use in `pre_install` / `post_install` scripts:
 | `$oldscoopdir`  | `C:\Users\username\AppData\Local\scoop`      | 
 | `$scoopdir`     | `C:\Users\username\scoop`                    | Base Scoop install dir (typically `%USERPROFILE%\scoop`, `%SCOOP% overrides)
 
-(_check the [`lib/install`](https://github.com/lukesampson/scoop/blob/master/lib/install.ps1) script for more details_)
+(_check the [`lib/install`](https://github.com/ScoopInstaller/Scoop/blob/master/lib/install.ps1) script for more details_)
 
 ## Functions
 
