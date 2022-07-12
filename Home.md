@@ -21,7 +21,7 @@
   - [Creating an App Manifest](Creating-an-app-manifest)
   - [Autoupdate](App-Manifest-Autoupdate)
   - [Persistent data](Persistent-data)
-  - [Pre- and post-install Scripts](Pre--and-Post-install-scripts)
+  - [Pre and Post install and uninstall Scripts](Pre-and-Post-install-and-uninstall-scripts)
 - [Dependencies](Dependencies)
 - [Making a contribution](https://github.com/ScoopInstaller/.github/blob/main/.github/CONTRIBUTING.md)
 - [The 'Current' Version Alias](The-'Current'-Version-Alias)
