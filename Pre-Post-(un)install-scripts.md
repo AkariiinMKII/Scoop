@@ -27,6 +27,10 @@ These variables are available for use in `pre_install` / `post_install` / `pre_u
 
 (_check the [`lib/install`](https://github.com/ScoopInstaller/Scoop/blob/master/lib/install.ps1) script for more details_)
 
+### The `$dir` variable
+
+This variable expands to the path with the actual version string in `pre_install`, `pre_uninstall`, `post_uninstall`, `installer.script` and `uninstaller.script` fields. However, it expands to the path with the "current" name instead of version in the `post_install` field.
+
 ## Functions
 
 ### `appdir`
