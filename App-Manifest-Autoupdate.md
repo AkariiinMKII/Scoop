@@ -612,7 +612,7 @@ Manifests in some known buckets are autoupdated by [ScoopInstaller/GithubActions
 
 `scoop status` will show version 2.1.3
 
-Running `scoop update` before `scoop status` is recommended (which is enforced every 3 hours), then it will show currect version 2.1.4.
+Running `scoop update` before `scoop status` is recommended (which is enforced every 3 hours), then it will show the correct version: 2.1.4.
 
 `scoop update` just `git pull`s **scoop** core repo to `~\scoop\apps\scoop\current` and every configured bucket to `~\scoop\buckets\<name>` (incl. default main bucket)
 
