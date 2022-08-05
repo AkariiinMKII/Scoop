@@ -55,6 +55,8 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
 - <a name="persist"/>`persist` A string or array of strings of directories and files to persist inside the data directory for the app. [Persistent data](Persistent-data)
 - <a name="post_install"/>`post_install`: A one-line string, or array of strings, of the commands to be executed after an application is installed. These can use variables like `$dir`, `$persist_dir`, and `$version`. See [Pre/Post (un)install scripts](Pre-Post-(un)install-scripts) for more details.
 - <a name="pre_install"/>`pre_install`: Same options as `post_install`, but executed before an application is installed.
+- <a name="pre_uninstall"/>`pre_uninstall`: Same options as `post_install`, but executed before an application is uninstalled.
+- <a name="post_uninstall"/>`post_uninstall`: Same options as `post_install`, but executed after an application is uninstalled.
 - <a name="psmodule"/>`psmodule`: Install as a PowerShell module in `~/scoop/modules`.
   - `name` (required for `psmodule`): the name of the module, which should match at least one file in the extracted directory for PowerShell to recognize this as a module.
 - <a name="shortcuts"/>`shortcuts`: Specifies the shortcut values to make available in the startmenu. See [sourcetree](https://github.com/lukesampson/scoop-extras/blob/master/bucket/sourcetree.json) for an example. The array has to contain a executable/label pair. The third and fourth element are optional.
