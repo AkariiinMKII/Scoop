@@ -21,7 +21,7 @@ For more examples, see the app manifests in the [main Scoop bucket](https://gith
 - <a name="description"/>`description`: A one line string containing a short description of the program. Don’t include the name of the program, if it’s the same as the app’s filename.
 - <a name="homepage"/>`homepage`: The home page for the program.
 - <a name="license"/>`license`: A string or hash of the software license for the program. For well-known licenses, please use the identifier found at <https://spdx.org/licenses> For other licenses, use the URL of the license, if available. Otherwise, use “Freeware”, “Proprietary”, “Public Domain”, “Shareware”, or “Unknown”, as appropriate. If different files have different licenses, separate licenses with a comma (,). If the entire application is [dual licensed](https://en.wikipedia.org/wiki/Multi-licensing), separate licenses with a pipe symbol (|).
-  - `identifier`: The SPDX identifier, or “Freeware”, “Proprietary”, “Public Domain”, “Shareware”, or “Unknown”, as appropriate.
+  - `identifier`: The SPDX identifier, or “Freeware” (free to use forever), “Proprietary” (must pay to use), “Public Domain”, “Shareware” (free to try, must pay eventually), or “Unknown” (unable to determine the license), as appropriate.
   - `url`: For non-SPDX licenses, include a link to the license. It is acceptable to include links to SPDX licenses, as well.
   - If it is difficult to determine all of the different licenses, it is acceptable to add `,...` at the end of the SPDX list. If there are both open-source and not open-source licenses, please list all non-open source licenses first (e.g., Freeware/Proprietary/Shareware).
   - If you are unable to determine what license the application has, use "Unknown".
