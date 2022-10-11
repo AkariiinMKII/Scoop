@@ -5,4 +5,4 @@ To add the bucket, run:
 scoop bucket add java
 ```
 
-For more information regarding the different Java versions available, see the [Scoop Java Wiki page](https://github.com/ScoopInstaller/Java).
+For more information regarding the different Java versions available, see the [Scoop Java Wiki page](https://github.com/ScoopInstaller/Java/wiki).
