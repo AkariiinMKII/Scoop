@@ -1,5 +1,3 @@
-# Java
-
 Java development kits (JDK) and runtime environments (JRE) are available through the [Scoop Java bucket](https://github.com/ScoopInstaller/Java).
 
 To add the bucket, run:
