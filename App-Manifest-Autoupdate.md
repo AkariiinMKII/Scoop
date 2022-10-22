@@ -183,6 +183,7 @@ This example will provide `${1}, ${2}, ${3}` (used in `checkver.replace`) and `$
     - Supports [captured variables](#captured-variables)
   - `useragent`: "string". User-Agent that used to get webpage content (only used in [fiddler](https://github.com/lukesampson/scoop-extras/blob/master/bucket/fiddler.json))
     - Supports [version variables](#version-variables)
+  - `script`: A string or array of strings that can contain PowerShell commands, useful for following multiple links (e.g. [UltraVNC](https://github.com/ScoopInstaller/Extras/blob/master/bucket/ultravnc.json)) or arbitrarily complex scenarios (e.g. [Spotify](https://github.com/ScoopInstaller/Extras/blob/master/bucket/spotify.json)).
 
 # Adding `autoupdate` to a manifest
 
