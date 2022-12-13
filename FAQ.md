@@ -40,7 +40,7 @@ scoop install git@2.23.0.windows.1
 
 You also install new versions of an app by running `scoop update` when a new version is available: the old version will be persisted until you remove them with the `scoop cleanup` command.
 
-**Please note:** running `scoop list` or `scoop info` will show the LATEST version installed, not all of them.
+**Please note:** running `scoop list` will show the LATEST version installed, not all of them. Run `scoop info <app>` to see all installed versions of a particular app.
 
 ### How do I switch between different versions of an app?
 
