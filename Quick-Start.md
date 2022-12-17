@@ -41,7 +41,7 @@ iwr -useb get.scoop.sh | iex
 Assuming you didn't see any error messages, Scoop is now ready to run.
 
 ### Installing global apps to custom directory
-Assuming the target directory is `C:\apps`, in a admin-enabled PowerShell command console, run:
+Assuming the target directory is `C:\apps`, in an admin-enabled PowerShell command console, run:
 ```powershell
 $env:SCOOP_GLOBAL='c:\apps'
 [environment]::setEnvironmentVariable('SCOOP_GLOBAL',$env:SCOOP_GLOBAL,'Machine')
@@ -85,9 +85,11 @@ To get the latest version of Scoop you have to run the command
 
     scoop update
 
-This will download the latest version of scoop and updates the local app manifests.
+This will download the latest version of scoop and update the local app manifests.
 
-After you updated Scoop you can update individual apps
+The `scoop update` will be automatically run after its last run to keep scoop updated if you call `scoop install <app>`, `scoop update <app>`, `scoop download <app>` or `scoop virustotal <app>`.
+
+After you updated Scoop, you can update individual apps
 
     scoop update curl
 
