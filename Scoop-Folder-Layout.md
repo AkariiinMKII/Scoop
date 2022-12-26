@@ -3,7 +3,7 @@ _Article stub. Please fill out/correct as needed. Maybe this is already or bette
 For general understanding and troubleshooting it can be helpful to know what folders Scoop uses and where they are. These are examples, configuration options could change where they are on your machine.
 
 `%USERPROFILE%\scoop` - per user root location (default)  
-`%SCOOP_GLOBAL%` - root location of apps installed for all users, `%SYSTEMDRIVE%\ProgramData\scoop`  
+`%SCOOP_GLOBAL%` - root location of apps installed for all users, `%ProgramData%\scoop`  
   
 `...\scoop\buckets` - manifests of installable apps (also a git clone of the bucket source repositories)  
 `...\scoop\cache` - the downloaded installers  
