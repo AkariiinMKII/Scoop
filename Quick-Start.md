@@ -1,52 +1,33 @@
 ### Prerequisites
-To get to the PowerShell prompt 
-  * "Start" --> (Search) "cmd"
-  * Terminal window should appear
-  * "powershell"
-  * Prompt should now start with "PS "
 
-Make sure you have **PowerShell 5.0** or later installed. If you're on *Windows 10* or *Windows Server 2012* you should be all set, but *Windows 7* and *Windows Server 2008* might have older versions.
+**PowerShell 5.1 or later is required**.
 
+If you're on Windows 10 or Windows Server 2016 or any newer version of Windows OS, you should be all set. For Windows 7/8 and Windows Server 2008/2012 by installing [Windows Management Framework 5.1](https://aka.ms/wmf5download) the OS-bundled PowerShell can be upgraded to version 5.1<sup>[windows powershell system requirements]</sup>, or you may install the latest version of PowerShell that supports your system side-by-side. Other older versions of Windows OS are not supported.
+
+PowerShell version check:
 ```powershell
-$psversiontable.psversion.major # should be >= 5.0
+$PSVersionTable.PSVersion # has to be >= 5.1
 ```
+
+**Appropriate execution policy**
 
 Make sure you have allowed PowerShell to execute local scripts:
 
 ```powershell
-set-executionpolicy remotesigned -scope currentuser
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ```
 
 `Unrestricted` will work too, but it is less secure. So stick with `RemoteSigned` if you're not sure.
 
 ### Installing Scoop
-In a PowerShell command console, run:
+
+Typically, in a PowerShell command console, run:
 
 ```powershell
-Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
-```
-or the shorter:
-```powershell
-iwr -useb get.scoop.sh | iex
+irm get.scoop.sh | iex
 ```
 
-### Installing Scoop to Custom Directory
-Assuming the target directory is `C:\scoop`, in a PowerShell command console, run:
-```powershell
-$env:SCOOP='C:\scoop'
-[environment]::setEnvironmentVariable('SCOOP',$env:SCOOP,'User')
-iwr -useb get.scoop.sh | iex
-```
-
-Assuming you didn't see any error messages, Scoop is now ready to run.
-
-### Installing global apps to custom directory
-Assuming the target directory is `C:\apps`, in an admin-enabled PowerShell command console, run:
-```powershell
-$env:SCOOP_GLOBAL='c:\apps'
-[environment]::setEnvironmentVariable('SCOOP_GLOBAL',$env:SCOOP_GLOBAL,'Machine')
-scoop install -g <app>
-```
+For advanced installation such as installing Scoop to a custom location other than the default path, please refer to [the installer's README].
 
 ### Using Scoop
 Although Scoop is written in PowerShell, its interface is closer to Git and Mercurial than it is to most PowerShell programs.
@@ -96,3 +77,6 @@ After you updated Scoop, you can update individual apps
 If you want to update all your installed apps, you can run
 
     scoop update *
+
+[windows powershell system requirements]: https://learn.microsoft.com/en-us/powershell/scripting/windows-powershell/install/windows-powershell-system-requirements
+[the installer's README]: https://github.com/ScoopInstaller/Install
