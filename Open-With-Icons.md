@@ -15,7 +15,7 @@ If you add the shim path (example: `$HOME/scoop/shims/mpv.exe`) instead, it will
 
 ## Automating associations
 
-Additionally, manifest authors can provide registry scripts along with the manifests (which can be modified and then copied into the program installation directory in [Pre/Post (un)install scripts](Pre-Post-(un)install-scripts)). These scripts are stored in the `scripts/<app-name>` subfolder in the bucket. A very good example can be found in the [Extras bucket, for VS Code](https://github.com/ScoopInstaller/Extras/tree/master/scripts/vscode) which has individual scripts for setting up file icons and program associations, as well as for removing them. 
+Additionally, manifest authors can provide registry scripts along with the manifests (which can be modified and then copied into the program installation directory in [Pre/Post (un)install scripts](Pre-Post-(un)install-scripts)). These scripts are stored in the `scripts/<app-name>` subfolder in the bucket. A very good example can be found in the [Extras bucket, for VS Code](https://github.com/ScoopInstaller/Extras/tree/master/scripts/vscode) which has individual scripts for setting up file icons and program associations, as well as for removing them. [Windows Terminal](https://github.com/ScoopInstaller/Extras/tree/master/scripts/windows-terminal is another example.
 
 # Fixing Mistakes
 
