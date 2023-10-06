@@ -13,6 +13,10 @@ If you add the shim path (example: `$HOME/scoop/shims/mpv.exe`) instead, it will
  - All the associated files too will forever be haunted by that icon.
  - Sometimes the shim won't even close itself after launching the program.
 
+## Automating associations
+
+Additionally, manifest authors can provide registry scripts along with the manifests (which can be modified and then copied into the program installation directory in [Pre/Post (un)install scripts](Pre-Post-(un)install-scripts)). These scripts are stored in the `scripts/<app-name>` subfolder in the bucket. A very good example can be found in the [Extras bucket, for VS Code](https://github.com/ScoopInstaller/Extras/tree/master/scripts/vscode) which has individual scripts for setting up file icons and program associations, as well as for removing them. 
+
 # Fixing Mistakes
 
 Once you add the shim for a program, Windows will not even let you let you add the proper path for it as an option anymore, presumably because it thinks that a program with the same basename (the shim) is already registered and so there's no need to add the new path.
