@@ -1,6 +1,6 @@
 ## Variables
 
-These variables are available for use in `pre_install` / `post_install` / `pre_uninstall` / `post_uninstall` scripts:
+These variables are available for use in `pre_install` / `installer.script` / `post_install` / `pre_uninstall` / `uninstaller.script` / `post_uninstall` scripts:
 
 | Variable        | Example                                      | Description      |
 |-----------------|----------------------------------------------|------------------|
