@@ -67,11 +67,11 @@ scoop install bucket\<app>.json
 
 ## Using RegEx in `checkver`
 
-Simplest solution is to use an RegEx and it will match it to the source of `homepage`. Example: [go](https://github.com/ScoopInstaller/Main/blob/master/bucket/go.json)
+Simplest solution is to use an RegEx and it will match it to the source of `homepage`. Example: [rust](https://github.com/ScoopInstaller/Main/blob/master/bucket/rust.json)
 
 ```json
-"homepage": "<https://golang.org">,
-"checkver": "Build version go([\\d\\.]+)\\."
+"homepage": "https://www.rust-lang.org",
+"checkver": "Version ([\\d.]+)"
 ```
 
 If you're not familiar with RegEx or want to test if your RegEx matches on the right text you can use an online tool ([RegEx101](https://regex101.com/) or [RegExr](https://regexr.com/)).
