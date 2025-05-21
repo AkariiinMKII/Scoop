@@ -8,7 +8,7 @@ Here's how to create and install a manifest for an 'app' that says hello, in jus
 '{ "version": "1.0", "url": "https://gist.github.com/lukesampson/6446238/raw/hello.ps1", "bin": "hello.ps1" }' > hello.json
 
 # install the app
-scoop install hello
+scoop install hello.json
 
 # did it work?
 hello # -> should output 'Hello, <your-username>!'
