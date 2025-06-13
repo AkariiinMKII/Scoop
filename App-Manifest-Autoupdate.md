@@ -515,6 +515,7 @@ All the properties can be set globally for all architectures or for each archite
   - `fosshub`: *Automatic*. Predefined for FossHub
   - `sourceforge`: *Automatic*. Predefined for SourceForge
   - `download`: Downloads the app file and hash it locally (Fallback)
+  - `none`: Skip updating `hash` property. When using this mode, DO NOT create `hash` property in initial manifest. (Use with caution!)
 - `url`: "uri". URL template for downloading RDF/JSON files or extracting hashes
   - Supports [captured variables](#captured-variables)
   - Supports [version variables](#version-variables)
